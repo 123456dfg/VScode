@@ -5,5 +5,7 @@ using namespace std;
 int main(){
     vector<string> strv;
     strv.push_back("test");
-    cout<<strv[0];
+    strv.push_back("test again");
+    for(auto str:strv)
+    cout<<str<<endl;
 }
