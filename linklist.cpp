@@ -35,7 +35,7 @@ void LINKLIST::tailcreate(linklist L){//尾插法
         r->next=p;
         r=p;
     }
-    r->next=NULL;
+    r->next=nullptr;
 }
 void LINKLIST::allmembers(linklist L){
     linklist p=L;
@@ -54,8 +54,8 @@ double LINKLIST::getmidele(linklist L){
     linklist search,mid;
     search=L->next;
     mid=L->next;
-    while(search->next!=NULL){
-        if(search->next->next!=NULL){
+    while(search->next!=nullptr){
+        if(search->next->next!=nullptr){
             search=search->next->next;
             mid=mid->next;
         }
@@ -105,7 +105,7 @@ int LINKLIST::linksearch(linklist L){
     cout<<"please enter your find number"<<endl;
     cin>>i;
     int count=0;
-    while(p->next!=NULL){
+    while(p->next!=nullptr){
         count++;
         p=p->next;
         if(p->data==i){
@@ -144,7 +144,7 @@ void LINKLIST::menu(linklist L){
     }
 }
 bool LINKLIST::empty(linklist L){
-    if(L==NULL){
+    if(L==nullptr){
         cout<<"请先创建一个链表";
         return true;
     }
