@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include<Windows.h>
 using namespace std;
 #define elemtype char
 #define initsize 100
@@ -94,4 +95,6 @@ int main(){
     solution.initstack(&s);
     solution.getdata(&s,&c);
     solution.bin2dec(&s,&c);
+    system("pause");
+    return 0;
 }
